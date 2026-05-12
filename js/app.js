@@ -82,17 +82,23 @@ function initLanguageSwitcher() {
 // ==================== HEADER ====================
 function initHeader() {
     const header = document.getElementById('header');
-    let lastScroll = 0;
+    let lastScroll = window.pageYOffset;
 
     window.addEventListener('scroll', function() {
         const currentScroll = window.pageYOffset;
-        
-        if (currentScroll > 100) {
+
+        if (currentScroll > 80) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
-        
+
+        if (currentScroll > lastScroll && currentScroll > 150) {
+            header.classList.add('header-hidden');
+        } else {
+            header.classList.remove('header-hidden');
+        }
+
         lastScroll = currentScroll;
     });
 }
