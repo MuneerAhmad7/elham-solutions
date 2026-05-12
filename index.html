@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elham Solutions - Leading IT Solutions Provider in Saudi Arabia">
+    <title>Elham Solutions | IT Solutions & Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-text" data-translate="loading">Loading...</div>
+        </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <div class="header-top-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="headerEmail">info@elhamsolutions.sa</span>
+                    </div>
+                    <div class="header-top-item">
+                        <i class="fas fa-phone"></i>
+                        <span id="headerPhone">+966 11 234 5678</span>
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    <div class="header-top-item">
+                        <i class="fas fa-clock"></i>
+                        <span data-translate="workingHours">Sun - Thu: 9:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="nav-container">
+                    <!-- Logo -->
+                    <a href="#home" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <div class="logo-text">
+                            ELHAM <span>SOLUTIONS</span>
+                        </div>
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="nav-menu" id="navMenu">
+                        <a href="#home" class="nav-link active" data-translate="navHome">Home</a>
+                        <a href="#services" class="nav-link" data-translate="navServices">Services</a>
+                        <a href="#about" class="nav-link" data-translate="navAbout">About</a>
+                        <a href="#portfolio" class="nav-link" data-translate="navPortfolio">Portfolio</a>
+                        <a href="#clients" class="nav-link" data-translate="navClients">Clients</a>
+                        <a href="#blog" class="nav-link" data-translate="navBlog">Blog</a>
+                        <a href="#careers" class="nav-link" data-translate="navCareers">Careers</a>
+                        <a href="#contact" class="nav-link" data-translate="navContact">Contact</a>
+                    </nav>
+
+                    <!-- Actions -->
+                    <div class="nav-actions">
+                        <!-- Language Switcher -->
+                        <button class="lang-switcher" id="langSwitcher">
+                            <i class="fas fa-globe"></i>
+                            <span id="currentLang">EN</span>
+                        </button>
+
+                        <!-- Get Quote Button -->
+                        <button class="btn btn-primary" id="getQuoteBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-translate="getQuote">Get Quote</span>
+                        </button>
+
+                        <!-- Mobile Toggle -->
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MAIN CONTENT (Sections Loaded Here) ========== -->
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <div id="heroSection"></div>
+
+        <!-- Services Section -->
+        <div id="servicesSection"></div>
+
+        <!-- About Section -->
+        <div id="aboutSection"></div>
+
+        <!-- Portfolio Section -->
+        <div id="portfolioSection"></div>
+
+        <!-- Clients Section -->
+        <div id="clientsSection"></div>
+
+        <!-- Testimonials Section -->
+        <div id="testimonialsSection"></div>
+
+        <!-- Blog Section -->
+        <div id="blogSection"></div>
+
+        <!-- Careers Section -->
+        <div id="careersSection"></div>
+
+        <!-- Contact Section -->
+        <div id="contactSection"></div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-about">
+                    <h3 data-translate="companyName">ELHAM SOLUTIONS</h3>
+                    <p data-translate="footerAbout">
+                        Leading IT solutions provider in Saudi Arabia, delivering innovative technology services.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links-section">
+                    <h4 class="footer-title" data-translate="quickLinks">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link" data-translate="navHome">Home</a>
+                        <a href="#about" class="footer-link" data-translate="navAbout">About</a>
+                        <a href="#services" class="footer-link" data-translate="navServices">Services</a>
+                        <a href="#portfolio" class="footer-link" data-translate="navPortfolio">Portfolio</a>
+                        <a href="#contact" class="footer-link" data-translate="navContact">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Services Links -->
+                <div class="footer-links-section">
+                    <h4 class="footer-title" data-translate="ourServices">Our Services</h4>
+                    <div class="footer-links">
+                        <a href="#services" class="footer-link" data-translate="serviceInfrastructure">IT Infrastructure</a>
+                        <a href="#services" class="footer-link" data-translate="serviceCloud">Cloud Solutions</a>
+                        <a href="#services" class="footer-link" data-translate="serviceSecurity">Cybersecurity</a>
+                        <a href="#services" class="footer-link" data-translate="serviceSoftware">Software Development</a>
+                        <a href="#services" class="footer-link" data-translate="serviceERP">ERP Solutions</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4 class="footer-title" data-translate="newsletter">Newsletter</h4>
+                    <p data-translate="newsletterText">Subscribe for latest updates</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" data-translate-placeholder="emailPlaceholder" placeholder="Your email" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 <span data-translate="companyName">Elham Solutions</span>. 
+                    <span data-translate="allRights">All Rights Reserved</span>.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#" data-translate="privacy">Privacy Policy</a>
+                    <a href="#" data-translate="terms">Terms of Service</a>
+                    <a href="#" data-translate="sitemap">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING ELEMENTS ========== -->
+    <a href="https://wa.me/966501234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
