@@ -227,8 +227,8 @@ input, select, textarea {
 .logo {
     display: flex;
     align-items: center;
-    gap: 14px;
-    font-size: 24px;
+    gap: 10px;
+    font-size: 18px;
     font-weight: 800;
     color: var(--primary-color);
 }
@@ -247,21 +247,22 @@ input, select, textarea {
 
 .logo img,
 .main-logo {
-    max-height: 50px;
+    max-height: 40px;
     width: auto;
     display: block;
 }
 
 .logo-text {
-    color: #fff;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.17);
+    font-size: 13px;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
 }
 
 .logo-text span {
     display: block;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .header.scrolled .logo-text {
