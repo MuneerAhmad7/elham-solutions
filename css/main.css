@@ -123,6 +123,30 @@ input, select, textarea {
     padding: var(--section-padding);
 }
 
+section.section-padding {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+section.section-padding::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    pointer-events: none;
+}
+
+section.section-padding .container {
+    position: relative;
+    z-index: 1;
+}
+
 .gradient-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -527,8 +551,15 @@ input, select, textarea {
     align-items: center;
     padding-top: 160px;
     padding-bottom: 80px;
-    background: var(--dark-1);
+    background: transparent;
     overflow: hidden;
+}
+
+.hero::before {
+    background: linear-gradient(rgba(10,25,41,0.9), rgba(10,25,41,0.75)), url('../images/hero/hero-main.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
 }
 
 .hero-shapes {
@@ -817,7 +848,11 @@ input, select, textarea {
 
 /* ========== SERVICES SECTION ========== */
 .services-section {
-    background: var(--light-1);
+    background: transparent;
+}
+
+.services-section::before {
+    background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.5)), url('../images/hero/hero-main.svg');
 }
 
 .services-grid {
@@ -827,12 +862,12 @@ input, select, textarea {
 }
 
 .service-card {
-    background: var(--white);
+    background: rgba(255,255,255,0.14);
     padding: 40px;
     border-radius: 16px;
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
     transition: var(--transition-slow);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(255,255,255,0.18);
     position: relative;
     overflow: hidden;
 }
@@ -929,7 +964,11 @@ input, select, textarea {
 
 /* ========== ABOUT SECTION ========== */
 .about-section {
-    background: var(--white);
+    background: transparent;
+}
+
+.about-section::before {
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.55)), url('../images/about/about-main.jpg');
 }
 
 .about-grid {
@@ -1019,9 +1058,9 @@ input, select, textarea {
     display: flex;
     gap: 20px;
     padding: 25px;
-    background: var(--light-1);
+    background: rgba(255,255,255,0.14);
     border-radius: 12px;
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid rgba(0,82,204,0.9);
 }
 
 .about-feature-icon {
@@ -1052,7 +1091,11 @@ input, select, textarea {
 
 /* ========== PORTFOLIO SECTION ========== */
 .portfolio-section {
-    background: var(--light-1);
+    background: transparent;
+}
+
+.portfolio-section::before {
+    background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.55)), url('../images/about/about-main.svg');
 }
 
 .portfolio-filters {
@@ -1088,10 +1131,10 @@ input, select, textarea {
 }
 
 .portfolio-card {
-    background: var(--white);
+    background: rgba(255,255,255,0.14);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
     transition: var(--transition-slow);
 }
 
@@ -1175,9 +1218,37 @@ input, select, textarea {
     line-height: 1.6;
 }
 
+.blog-section {
+    background: transparent;
+}
+
+.blog-section::before {
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.55)), url('../images/hero/hero-main.svg');
+}
+
+.careers-section {
+    background: transparent;
+}
+
+.careers-section::before {
+    background: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.6)), url('../images/about/about-main.svg');
+}
+
+.testimonials-section {
+    background: transparent;
+}
+
+.testimonials-section::before {
+    background: linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.7)), url('../images/hero/hero-main.svg');
+}
+
 /* ========== CLIENTS & TESTIMONIALS ========== */
 .clients-section {
-    background: var(--white);
+    background: transparent;
+}
+
+.clients-section::before {
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.55)), url('../images/hero/hero-main.svg');
 }
 
 .clients-grid {
@@ -1192,7 +1263,7 @@ input, select, textarea {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background: var(--light-1);
+    background: rgba(255,255,255,0.12);
     border-radius: 12px;
     min-height: 120px;
     transition: var(--transition);
@@ -1223,7 +1294,7 @@ input, select, textarea {
 }
 
 .testimonial-card {
-    background: var(--light-1);
+    background: rgba(255,255,255,0.12);
     padding: 40px;
     border-radius: 16px;
     position: relative;
@@ -1298,8 +1369,13 @@ input, select, textarea {
 
 /* ========== CONTACT SECTION ========== */
 .contact-section {
-    background: var(--dark-1);
+    background: transparent;
     color: var(--white);
+}
+
+.contact-section::before {
+    background: linear-gradient(rgba(10,25,41,0.9), rgba(10,25,41,0.85)), url('../images/hero/hero-main.svg');
+    opacity: 1;
 }
 
 .contact-grid {
