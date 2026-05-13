@@ -123,30 +123,6 @@ input, select, textarea {
     padding: var(--section-padding);
 }
 
-section.section-padding {
-    position: relative;
-    overflow: hidden;
-    background: transparent;
-}
-
-section.section-padding::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: none;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    pointer-events: none;
-}
-
-section.section-padding .container {
-    position: relative;
-    z-index: 1;
-}
-
 .gradient-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -551,15 +527,8 @@ section.section-padding .container {
     align-items: center;
     padding-top: 160px;
     padding-bottom: 80px;
-    background: transparent;
+    background: var(--dark-1);
     overflow: hidden;
-}
-
-.hero::before {
-    background: linear-gradient(rgba(10,25,41,0.9), rgba(10,25,41,0.75)), url('../images/hero/hero-main.jpg');
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
 }
 
 .hero-shapes {
@@ -848,11 +817,7 @@ section.section-padding .container {
 
 /* ========== SERVICES SECTION ========== */
 .services-section {
-    background: transparent;
-}
-
-.services-section::before {
-    background: linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.5)), url('../images/hero/hero-main.svg');
+    background: var(--light-1);
 }
 
 .services-grid {
@@ -862,12 +827,12 @@ section.section-padding .container {
 }
 
 .service-card {
-    background: rgba(255,255,255,0.14);
+    background: var(--white);
     padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-sm);
     transition: var(--transition-slow);
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
 }
@@ -964,11 +929,7 @@ section.section-padding .container {
 
 /* ========== ABOUT SECTION ========== */
 .about-section {
-    background: transparent;
-}
-
-.about-section::before {
-    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.55)), url('../images/about/about-main.jpg');
+    background: var(--white);
 }
 
 .about-grid {
@@ -1058,9 +1019,9 @@ section.section-padding .container {
     display: flex;
     gap: 20px;
     padding: 25px;
-    background: rgba(255,255,255,0.14);
+    background: var(--light-1);
     border-radius: 12px;
-    border-left: 4px solid rgba(0,82,204,0.9);
+    border-left: 4px solid var(--primary-color);
 }
 
 .about-feature-icon {
@@ -1091,11 +1052,7 @@ section.section-padding .container {
 
 /* ========== PORTFOLIO SECTION ========== */
 .portfolio-section {
-    background: transparent;
-}
-
-.portfolio-section::before {
-    background: linear-gradient(rgba(255,255,255,0.65), rgba(255,255,255,0.55)), url('../images/about/about-main.svg');
+    background: var(--light-1);
 }
 
 .portfolio-filters {
@@ -1131,10 +1088,10 @@ section.section-padding .container {
 }
 
 .portfolio-card {
-    background: rgba(255,255,255,0.14);
+    background: var(--white);
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-md);
     transition: var(--transition-slow);
 }
 
@@ -1218,37 +1175,9 @@ section.section-padding .container {
     line-height: 1.6;
 }
 
-.blog-section {
-    background: transparent;
-}
-
-.blog-section::before {
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.55)), url('../images/hero/hero-main.svg');
-}
-
-.careers-section {
-    background: transparent;
-}
-
-.careers-section::before {
-    background: linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.6)), url('../images/about/about-main.svg');
-}
-
-.testimonials-section {
-    background: transparent;
-}
-
-.testimonials-section::before {
-    background: linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.7)), url('../images/hero/hero-main.svg');
-}
-
 /* ========== CLIENTS & TESTIMONIALS ========== */
 .clients-section {
-    background: transparent;
-}
-
-.clients-section::before {
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.55)), url('../images/hero/hero-main.svg');
+    background: var(--white);
 }
 
 .clients-grid {
@@ -1263,7 +1192,7 @@ section.section-padding .container {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background: rgba(255,255,255,0.12);
+    background: var(--light-1);
     border-radius: 12px;
     min-height: 120px;
     transition: var(--transition);
@@ -1294,7 +1223,7 @@ section.section-padding .container {
 }
 
 .testimonial-card {
-    background: rgba(255,255,255,0.12);
+    background: var(--light-1);
     padding: 40px;
     border-radius: 16px;
     position: relative;
@@ -1369,13 +1298,8 @@ section.section-padding .container {
 
 /* ========== CONTACT SECTION ========== */
 .contact-section {
-    background: transparent;
+    background: var(--dark-1);
     color: var(--white);
-}
-
-.contact-section::before {
-    background: linear-gradient(rgba(10,25,41,0.9), rgba(10,25,41,0.85)), url('../images/hero/hero-main.svg');
-    opacity: 1;
 }
 
 .contact-grid {
