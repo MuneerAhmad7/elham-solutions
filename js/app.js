@@ -114,8 +114,23 @@ function initMobileMenu() {
             this.classList.toggle('active');
         });
         
-        // Close menu on link click
-        const navLinks = document.querySelectorAll('.nav-link');
+        // Handle dropdown toggles on mobile
+        const dropdowns = document.querySelectorAll('.nav-dropdown');
+        dropdowns.forEach(dropdown => {
+            const link = dropdown.querySelector('.nav-link');
+            if (link) {
+                link.addEventListener('click', function(e) {
+                    // Only prevent default on mobile
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('active');
+                    }
+                });
+            }
+        });
+        
+        // Close menu on non-dropdown link click
+        const navLinks = document.querySelectorAll('.nav-link:not(.nav-dropdown .nav-link)');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 menu.classList.remove('active');
