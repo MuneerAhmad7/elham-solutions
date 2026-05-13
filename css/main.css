@@ -6,29 +6,29 @@
 /* ========== CSS VARIABLES ========== */
 :root {
     /* Colors */
-    --primary-color: #0052CC;
-    --primary-dark: #003D99;
-    --primary-light: #0065FF;
-    --secondary-color: #00B8D4;
-    --accent-color: #FF6B35;
+    --primary-color: #7C3AED;
+    --primary-dark: #5B21B6;
+    --primary-light: #A855F7;
+    --secondary-color: #EC4899;
+    --accent-color: #F472B6;
     
-    --dark-1: #0A1929;
-    --dark-2: #1A2027;
-    --dark-3: #2D3748;
+    --dark-1: #120B24;
+    --dark-2: #1E0E3B;
+    --dark-3: #2F1A5F;
     
-    --light-1: #F8FAFC;
-    --light-2: #F1F5F9;
-    --light-3: #E2E8F0;
+    --light-1: #F5E6FF;
+    --light-2: #F8EEFF;
+    --light-3: #EEE0FF;
     
     --white: #FFFFFF;
-    --text-primary: #1E293B;
-    --text-secondary: #64748B;
-    --border-color: #CBD5E1;
+    --text-primary: #2A1B3D;
+    --text-secondary: #6E4EA5;
+    --border-color: #D8B8F8;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #0052CC 0%, #0065FF 100%);
-    --gradient-secondary: linear-gradient(135deg, #00B8D4 0%, #00E5FF 100%);
-    --gradient-dark: linear-gradient(135deg, #0A1929 0%, #1A2027 100%);
+    --gradient-primary: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+    --gradient-secondary: linear-gradient(135deg, #A855F7 0%, #F472B6 100%);
+    --gradient-dark: linear-gradient(135deg, #120B24 0%, #1E0E3B 100%);
     
     /* Shadows */
     --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -68,7 +68,9 @@ body {
     font-family: var(--font-primary);
     color: var(--text-primary);
     line-height: 1.7;
-    background: var(--white);
+    background: radial-gradient(circle at top left, rgba(124, 58, 237, 0.12), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.12), transparent 30%),
+                #FDF7FF;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
@@ -527,7 +529,7 @@ input, select, textarea {
     align-items: center;
     padding-top: 160px;
     padding-bottom: 80px;
-    background: var(--dark-1);
+    background: var(--gradient-dark);
     overflow: hidden;
 }
 
@@ -541,14 +543,14 @@ input, select, textarea {
 .hero-shape {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.05;
+    opacity: 0.16;
     animation: float 20s infinite;
 }
 
 .hero-shape-1 {
     width: 500px;
     height: 500px;
-    background: var(--primary-light);
+    background: rgba(168, 85, 247, 0.45);
     top: -250px;
     right: -100px;
 }
@@ -556,7 +558,7 @@ input, select, textarea {
 .hero-shape-2 {
     width: 400px;
     height: 400px;
-    background: var(--secondary-color);
+    background: rgba(236, 72, 153, 0.35);
     bottom: -200px;
     left: -100px;
     animation-delay: 5s;
@@ -565,7 +567,7 @@ input, select, textarea {
 .hero-shape-3 {
     width: 300px;
     height: 300px;
-    background: var(--accent-color);
+    background: rgba(244, 114, 182, 0.3);
     top: 50%;
     left: 50%;
     animation-delay: 10s;
@@ -1234,7 +1236,7 @@ input, select, textarea {
     top: 20px;
     right: 30px;
     font-size: 60px;
-    color: rgba(0, 82, 204, 0.1);
+    color: rgba(236, 72, 153, 0.12);
     font-family: Georgia, serif;
 }
 
@@ -1245,7 +1247,7 @@ input, select, textarea {
 }
 
 .testimonial-stars i {
-    color: #FFB800;
+    color: var(--secondary-color);
     font-size: 16px;
 }
 
@@ -1558,7 +1560,7 @@ input, select, textarea {
     right: 30px;
     width: 60px;
     height: 60px;
-    background: #25D366;
+    background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
